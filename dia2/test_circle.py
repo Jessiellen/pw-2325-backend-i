@@ -1,6 +1,6 @@
 
 import unittest
-from ..circle import Circle
+from circle import Circle
 
 
 class CircleTests(unittest.TestCase):

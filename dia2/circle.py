@@ -40,10 +40,10 @@ class Circle:
     
     @property
     def perimeter(self) ->float:
-        return 2.(math.pi)(self.radiou)
+        return 2*math.pi*self.radious
     
     @property
     def perimeter(self) ->float:
-        return math.pi(self.radiou**2)
+        return math.pi*self.radious**2
     
     
