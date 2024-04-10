@@ -1,21 +1,23 @@
 [tool.poetry]
-name = "aula5"
+name = "mylist"
 version = "0.1.0"
-description = "Aula 5"
-authors = ["Jessiellen"]
-license = "IMT"
+description = "Mylist"
+authors = ["Jessiellen Souza"]
+license = "MIT"
+readme = "README.md"
 packages = [
-    {incluide = "eticbot/*.py}
+  { include = "src/*.py" }
 ]
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
 click = "^8.1.7"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.scripts]
+cli = cli:run'
 
-[tools.poetry.scripts]
-bot ="eticbot.app:bot"
+[tool.poetry.dev-dependencies]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

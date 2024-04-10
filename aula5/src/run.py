@@ -15,6 +15,8 @@ def add(product:str):
     file.write(f"{product}\n")
     file.close()
     click.echo(f"{product.upper()}added!")
+
+    
     # with open(filename, "w") as file:
     #     products = file.readlines()
     #     products.append(product)
